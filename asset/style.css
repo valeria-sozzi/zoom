@@ -7,6 +7,7 @@
 body{
     font-family: "Roboto", sans-serif;
     background-color: black;
+    color: white;
 }
 
 /* #region header */
@@ -15,7 +16,6 @@ header>.icon{
     background-color: #4c4c4c;
     border-radius: 0.5rem;
     padding: 5px;
-    color: white;
     margin-right: 5px;
     font-size: 0.9rem;
 }
@@ -32,23 +32,24 @@ header{
 
 .container{
     width: 100vw;
+    height: calc(100vh - 140px);
     display: flex;
     justify-content: center;
 }
 .row{
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-flow: wrap;
     gap: 20px 10px;
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .col{
     background-image: url("https://i0.wp.com/fotografinviaggio.it/wp-content/uploads/2023/04/Immagine-copertina-per-blog-1-2-2.jpg?fit=1000%2C662&ssl=1");
     background-size: cover;
-    width: 15%;
-    height: 150px;
+    width: 13%;
     position:relative;
 }
 
@@ -56,9 +57,62 @@ header{
     position: absolute;
     bottom: 0;
     left: 0;
-    color: white;
     background-color: #9a9999a1;
     padding: 5px 10px;
     border-radius: 5px; 
 }
 /* #endregion main */
+
+/* #region footer */
+footer{
+    background-color: #312f2f;
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.col-left{
+    width: 15%;
+}
+
+.col-main{
+    width: 40%;
+}
+
+.col-right{
+    background-color: #4c4c4c;
+    height: 100%;
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    color: red;
+}
+
+footer ul{
+    list-style: none;
+    display:flex ;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+li>.actions{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.col-main>ul{
+    justify-content: space-between;
+}
+
+.bg-green{
+    color: rgb(12, 208, 12);
+}
+/* #endregion footer */
