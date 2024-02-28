@@ -9,13 +9,6 @@ body{
     background-color: black;
 }
 
-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 40px;
-}
-
 /* #region header */
 
 header>.icon{
@@ -27,4 +20,45 @@ header>.icon{
     font-size: 0.9rem;
 }
 
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+}
 /* #endregion header */
+
+/* #region main */
+
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.row{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+    gap: 20px 10px;
+    margin-top: 2rem;
+}
+
+.col{
+    background-image: url("https://i0.wp.com/fotografinviaggio.it/wp-content/uploads/2023/04/Immagine-copertina-per-blog-1-2-2.jpg?fit=1000%2C662&ssl=1");
+    background-size: cover;
+    width: 15%;
+    height: 150px;
+    position:relative;
+}
+
+.name{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: #9a9999a1;
+    padding: 5px 10px;
+    border-radius: 5px; 
+}
+/* #endregion main */
